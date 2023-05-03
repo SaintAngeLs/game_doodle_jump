@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a004919c-2bab-472b-bfa6-29a3b86de9c3}</ProjectGuid>
+    <RootNamespace>gamedoodlejump</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\game_doodle_jump\include</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\game_doodle_jump\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FrameworkRelease_x86.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\game_doodle_jump\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\game_doodle_jump\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FrameworkRelease_x86.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="game_doodle_jump.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdcpp20</LanguageStandard>
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdcpp20</LanguageStandard>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="components\CoordSystemR2.h" />
+    <ClInclude Include="components\SizeR2.h" />
+    <ClInclude Include="components\Speed.h" />
+    <ClInclude Include="conf\AbilityConfiguration.h" />
+    <ClInclude Include="conf\BackgroundConfiguration.h" />
+    <ClInclude Include="conf\ConfigDeserializer.h" />
+    <ClInclude Include="conf\ConfigurationLoader.h" />
+    <ClInclude Include="conf\ConfigResolutionAdjuster.h" />
+    <ClInclude Include="conf\DoodleConfiguration.h" />
+    <ClInclude Include="conf\EnemyConfiguration.h" />
+    <ClInclude Include="conf\PlatformConfiguration.h" />
+    <ClInclude Include="conf\ProjectileConfiguration.h" />
+    <ClInclude Include="entities\Ability.h" />
+    <ClInclude Include="entities\BackgroundObject.h" />
+    <ClInclude Include="entities\BeyondBondaryMovingEntity.h" />
+    <ClInclude Include="entities\DoodleObject.h" />
+    <ClInclude Include="entities\EnemyObject.h" />
+    <ClInclude Include="entities\ObjectEntitiesGenerator.h" />
+    <ClInclude Include="entities\GameOverChecker.h" />
+    <ClInclude Include="entities\PlatformObject.h" />
+    <ClInclude Include="entities\ProjectileObject.h" />
+    <ClInclude Include="entities\UserInputTracker.h" />
+    <ClInclude Include="factories\EntitiesComponentFactory.h" />
+    <ClInclude Include="factories\HoldersComponentFactory.h" />
+    <ClInclude Include="factories\ManagersComponentFactory.h" />
+    <ClInclude Include="factories\NodesFactory.h" />
+    <ClInclude Include="factories\SharedComponentsFactory.h" />
+    <ClInclude Include="holders\ConfigsHolder.h" />
+    <ClInclude Include="holders\SharedComponentHolder.h" />
+    <ClInclude Include="managers\EntityManagerComponent.h" />
+    <ClInclude Include="managers\RemovingManagerComponent.h" />
+    <ClInclude Include="managers\SystemManagerComponent.h" />
+    <ClInclude Include="nodes\AbilityGeneratorNode.h" />
+    <ClInclude Include="nodes\AbilityNode.h" />
+    <ClInclude Include="nodes\BeyondBondaryMovingNode.h" />
+    <ClInclude Include="nodes\ConstantXMoveNode.h" />
+    <ClInclude Include="nodes\EnemyGeneratorNode.h" />
+    <ClInclude Include="nodes\EnemyMovingNode.h" />
+    <ClInclude Include="nodes\GameOverCheckerNode.h" />
+    <ClInclude Include="nodes\GravitationNode.h" />
+    <ClInclude Include="nodes\HeightMonitoringNode.h" />
+    <ClInclude Include="nodes\JumpNode.h" />
+    <ClInclude Include="nodes\JumpOnEnemyNode.h" />
+    <ClInclude Include="nodes\MouseTrackNode.h" />
+    <ClInclude Include="nodes\PickUpAbilityNode.h" />
+    <ClInclude Include="nodes\PlatformGeneratorNode.h" />
+    <ClInclude Include="nodes\PlatformMovingNode.h" />
+    <ClInclude Include="nodes\PressedKeyTrackNode.h" />
+    <ClInclude Include="nodes\PressedMouseButtonTrackNode.h" />
+    <ClInclude Include="nodes\ProjectileGeneratorNode.h" />
+    <ClInclude Include="nodes\ProjectileMovementNode.h" />
+    <ClInclude Include="nodes\RenderNode.h" />
+    <ClInclude Include="nodes\ShootingEnemyNode.h" />
+    <ClInclude Include="systems\AbilityGeneratorSystem.h" />
+    <ClInclude Include="systems\AbilitySystem.h" />
+    <ClInclude Include="systems\BeyondBoundaryMovingSystem.h" />
+    <ClInclude Include="systems\ConstantXMoveSystem.h" />
+    <ClInclude Include="systems\EnemyGeneratorSystem.h" />
+    <ClInclude Include="systems\EnemyMovingSystem.h" />
+    <ClInclude Include="systems\GravitationSystem.h" />
+    <ClInclude Include="systems\HeightMonitoringSystem.h" />
+    <ClInclude Include="systems\InputSystem.h" />
+    <ClInclude Include="systems\JumpOnEnemySystem.h" />
+    <ClInclude Include="systems\JumpSystem.h" />
+    <ClInclude Include="systems\MouseTrackSystem.h" />
+    <ClInclude Include="systems\PickUpAbilitySystem.h" />
+    <ClInclude Include="systems\PlatformGeneratorSystem.h" />
+    <ClInclude Include="systems\PlatformMovingSystem.h" />
+    <ClInclude Include="systems\PressedKeyTrackSystem.h" />
+    <ClInclude Include="systems\PressedMouseButtonTrackSystem.h" />
+    <ClInclude Include="systems\ProjectileGeneratorSystem.h" />
+    <ClInclude Include="systems\ProjectileMovementSystem.h" />
+    <ClInclude Include="systems\RenderSystem.h" />
+    <ClInclude Include="systems\ShootingEnemySystem.h" />
+    <ClInclude Include="systems\System.h" />
+    <ClInclude Include="utilities\Collider.h" />
+    <ClInclude Include="utilities\PlatformConfig.h" />
+    <ClInclude Include="utilities\RandomValueGenerator.h" />
+    <ClInclude Include="utilities\AdapterScreenResolution.h" />
+    <ClInclude Include="utilities\SFML\Graphics.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Glsl.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\VertexBuffer.hpp" />
+    <ClInclude Include="utilities\SFML\Graphics\View.hpp" />
+    <ClInclude Include="utilities\UUID.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\conf\AbilityConfiguration.json" />
+    <None Include="resources\conf\BackgroundConfiguration.json" />
+    <None Include="resources\conf\DoodleConfiguration.json" />
+    <None Include="resources\conf\EnemyConfiguration.json" />
+    <None Include="resources\conf\PlatformConfiguration.json" />
+    <None Include="resources\conf\ProjectileConfiguration.json" />
+    <None Include="utilities\SFML\Graphics\Glsl.inl" />
+    <None Include="utilities\SFML\Graphics\Rect.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\sprites\ability.png" />
+    <Image Include="resources\sprites\background.png" />
+    <Image Include="resources\sprites\doodle.png" />
+    <Image Include="resources\sprites\enemy.png" />
+    <Image Include="resources\sprites\platform.png" />
+    <Image Include="resources\sprites\projectile.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
